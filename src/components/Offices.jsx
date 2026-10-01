@@ -21,17 +21,17 @@ const Offices = ({ invert = false, ...props }) => {
   return (
     <ul role="list" {...props}>
       <li>
-        <Office name="U.S.A" invert={invert}>
-          on bay mark
+        <Office name="Peru" invert={invert}>
+          Atencion remota
           <br />
-          Newtown city of Las Vegas
+          Proyectos para Latinoamerica
         </Office>
       </li>
       <li>
-        <Office name="London" invert={invert}>
-          13 long Street
+        <Office name="Online" invert={invert}>
+          Reuniones por videollamada
           <br />
-          Downtown, Allyway
+          Soporte y seguimiento digital
         </Office>
       </li>
     </ul>

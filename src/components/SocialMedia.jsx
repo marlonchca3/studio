@@ -2,33 +2,27 @@ import Link from "next/link";
 import clsx from "clsx";
 import {
   BsFacebook,
-  BsTwitter,
   BsGithub,
-  BsYoutube,
+  BsWhatsapp,
   BsLinkedin,
 } from "react-icons/bs";
 
 export const SocialMediaProfiles = [
   {
-    title: "Youtube",
-    href: "https://www.youtube.com/watch?v=eAswnbWptBM",
-    icon: BsYoutube,
+    title: "WhatsApp",
+    href: "https://wa.me/",
+    icon: BsWhatsapp,
   },
-  { title: "GitHub", href: "https://github.com/chrhi", icon: BsGithub },
+  { title: "GitHub", href: "https://github.com/", icon: BsGithub },
   {
     title: "Facebook",
-    href: "https://www.facebook.com/profile.php?id=100010070348939",
+    href: "https://www.facebook.com/",
     icon: BsFacebook,
   },
   {
-    title: "linkedin",
-    href: "https://www.linkedin.com/in/chehri-abdellah-4a8858267/",
+    title: "LinkedIn",
+    href: "https://www.linkedin.com/",
     icon: BsLinkedin,
-  },
-  {
-    title: "Twitter",
-    href: "https://twitter.com/KING_IN_JUNGLE",
-    icon: BsTwitter,
   },
 ];
 

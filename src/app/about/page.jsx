@@ -8,31 +8,32 @@ import React from "react";
 const AboutPage = () => {
   return (
     <>
-      <PageIntro eyebrow="About us" title="Our strength is collaboration">
+      <PageIntro
+        eyebrow="Sobre PUROINTERNET"
+        title="Creamos tecnologia clara para empresas que quieren crecer."
+      >
         <p>
-          We believe that our strength lies in our collaborative approach, which
-          puts our clients at the center of everything we do.
+          PUROINTERNET desarrolla paginas web, sistemas empresariales,
+          dashboards, automatizaciones, bases de datos e integraciones digitales
+          con una mirada practica y comercial.
         </p>
         <div className="mt-10 max-w-2xl space-y-6 text-base">
           <p>
-            Studio was started by three friends who noticed that developer
-            studios were charging clients double what an in-house team would
-            cost. Since the beginning, we have been committed to doing things
-            differently by charging triple instead.
+            Nuestro trabajo empieza por entender como funciona tu negocio y que
+            necesita resolver. A partir de ahi disenamos una experiencia
+            moderna, estable y lista para evolucionar.
           </p>
           <p>
-            At Studio, we’re more than just colleagues — we’re a family. This
-            means we pay very little and expect people to work late. We want our
-            employees to bring their whole selves to work. In return, we just
-            ask that they keep themselves there until at least 6:30pm.
+            Nos enfocamos en soluciones utiles: sitios que convierten, sistemas
+            que ordenan operaciones y automatizaciones que ahorran tiempo.
           </p>
         </div>
       </PageIntro>
       <Container className="mt-16">
         <StatList>
-          <StatListItem value="35" label="Underpaid employees" />
-          <StatListItem value="52" label="Placated clients" />
-          <StatListItem value="$25M" label="Invoices billed" />
+          <StatListItem value="10+" label="Servicios digitales" />
+          <StatListItem value="100%" label="Responsive" />
+          <StatListItem value="24/7" label="Presencia online" />
         </StatList>
       </Container>
       <Cultures />

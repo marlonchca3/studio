@@ -8,15 +8,16 @@ import List, { ListItem } from "./List";
 
 const Services = () => {
   return (
-    <>
+    <section id="servicios">
       <SectionIntro
-        eyebrow="Services"
-        title="We help you identify, explore and respond to new opportunities."
+        eyebrow="Servicios"
+        title="Desarrollamos soluciones digitales completas para operar, vender y escalar."
         className="mt-24 sm:mt-32 lg:mt-40"
       >
         <p>
-          As long as those opportunities involve giving us money to re-purpose
-          old projects — we can come up with an endless number of those.
+          Desde una landing page rapida hasta un sistema web con usuarios,
+          bases de datos, paneles e integraciones, construimos tecnologia con
+          foco en resultados.
         </p>
       </SectionIntro>
       <Container className="mt-16">
@@ -32,29 +33,31 @@ const Services = () => {
           </div>
           {/* List item */}
           <List className="mt-16 lg:mt-0 lg:w-1/2 lg:min-w-[33rem] lg:pl-4">
-            <ListItem title="Web development">
-              We specialise in crafting beautiful, high quality marketing pages.
-              The rest of the website will be a shell that uses lorem ipsum
-              everywhere.
+            <ListItem title="Paginas web y landing pages">
+              Sitios corporativos, paginas de venta y experiencias responsive
+              con contenido claro, buen rendimiento y una presencia profesional.
             </ListItem>
-            <ListItem title="Application development">
-              We have a team of skilled developers who are experts in the latest
-              app frameworks, like Angular 1 and Google Web Toolkit.
+            <ListItem title="Sistemas web empresariales">
+              Plataformas a medida con login, roles, formularios, bases de
+              datos, modulos internos y administracion de procesos.
             </ListItem>
-            <ListItem title="E-commerce">
-              We are at the forefront of modern e-commerce development. Which
-              mainly means adding your logo to the Shopify store template we’ve
-              used for the past six years.
+            <ListItem title="Dashboards y paneles administrativos">
+              Tableros con metricas, filtros, gestion de usuarios, reportes y
+              visualizacion de datos para tomar mejores decisiones.
             </ListItem>
-            <ListItem title="Custom content management">
-              At Studio we understand the importance of having a robust and
-              customised CMS. That’s why we run all of our client projects out
-              of a single, enormous Joomla instance.
+            <ListItem title="Automatizacion, APIs, IA y e-commerce">
+              Integramos herramientas, automatizamos tareas, conectamos APIs,
+              implementamos soluciones con inteligencia artificial y tiendas
+              online listas para vender.
+            </ListItem>
+            <ListItem title="Mantenimiento y soporte web">
+              Acompanamos la evolucion del producto con mejoras, monitoreo,
+              optimizacion, correcciones y soporte tecnico continuo.
             </ListItem>
           </List>
         </div>
       </Container>
-    </>
+    </section>
   );
 };
 

@@ -3,10 +3,11 @@ import PageIntro from "@/components/PageIntro";
 const BlogPage = () => {
   return (
     <>
-      <PageIntro eyebrow="Blog" title="The latest articles and news">
+      <PageIntro eyebrow="Recursos" title="Ideas para mejorar tu negocio digital">
         <p>
-          Stay up-to-date with the latest industry news as our marketing teams
-          finds new ways to re-purpose old CSS tricks articles.
+          Pronto compartiremos guias sobre desarrollo web, automatizacion,
+          dashboards, integraciones, inteligencia artificial y crecimiento
+          digital para empresas.
         </p>
       </PageIntro>
     </>

@@ -2,15 +2,15 @@ import { SocialMediaProfiles } from "@/components/SocialMedia";
 
 export const navigation = [
   {
-    title: "Work",
+    title: "Soluciones",
     links: [
-      { title: "AH MANA3RAF", href: "/work/amazonclone" },
-      { title: "AH MANA3RAF", href: "/work/bazar" },
-      { title: "AH MANA3RAF", href: "/work/blog101" },
+      { title: "Desarrollo web", href: "/#servicios" },
+      { title: "Sistemas empresariales", href: "/#servicios" },
+      { title: "Dashboards", href: "/#proyectos" },
       {
         title: (
           <>
-            See all <span aria-hidden="true">&rarr;</span>
+            Ver proyectos <span aria-hidden="true">&rarr;</span>
           </>
         ),
         href: "/work",
@@ -18,16 +18,16 @@ export const navigation = [
     ],
   },
   {
-    title: "Company",
+    title: "Empresa",
     links: [
-      { title: "About", href: "/about" },
-      { title: "Process", href: "/process" },
-      { title: "Blog", href: "/blog" },
-      { title: "Contact us", href: "/contact" },
+      { title: "Sobre PUROINTERNET", href: "/about" },
+      { title: "Proceso", href: "/process" },
+      { title: "Tecnologias", href: "/#tecnologias" },
+      { title: "Contacto", href: "/contact" },
     ],
   },
   {
-    title: "Connect",
+    title: "Contacto",
     links: SocialMediaProfiles,
   },
 ];

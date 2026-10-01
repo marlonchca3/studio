@@ -1,6 +1,6 @@
 export function constructMetadata({
-  title = "Abdullah Agency ",
-  description = "Abdullah Agency is an open-source website.",
+  title = "PUROINTERNET | Desarrollo web, sistemas y automatización",
+  description = "PUROINTERNET crea páginas web, sistemas empresariales, dashboards, automatización e integraciones digitales para negocios que quieren crecer.",
   image = "/agency.PNG",
   icons = "/favicon.ico",
   noIndex = false,
@@ -22,11 +22,11 @@ export function constructMetadata({
       title,
       description,
       images: [image],
-      creator: "@KING_IN_JUNGLE",
+      creator: "@purointernet",
     },
     icons,
-    metadataBase: new URL("https://agency-website-abdullah.vercel.app/"),
-    themeColor: "#FFF",
+    metadataBase: new URL("https://purointernet.com/"),
+    themeColor: "#0A0A0A",
     ...(noIndex && {
       robots: {
         index: false,
