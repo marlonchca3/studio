@@ -40,7 +40,7 @@ const NewsletterForm = () => {
           <button
             type="submit"
             aria-label="Submit"
-            className="flex aspect-square h-full items-center justify-center rounded-xl bg-neutral-950 text-white transition hover:bg-neutral-800"
+            className="flex aspect-square h-full items-center justify-center rounded-xl bg-gradient-to-br from-cyan-500 to-fuchsia-500 text-white transition hover:from-cyan-400 hover:to-fuchsia-400"
           >
             <ArrowIcon className="w-4" />
           </button>
@@ -60,7 +60,7 @@ const Footer = () => {
             <NewsletterForm />
           </div>
         </div>
-        <div className="mb-20 mt-24 flex flex-wrap items-end justify-between gap-x-6 gap-y-4 border-t border-neutral-950/10 pt-12">
+        <div className="mb-20 mt-24 flex flex-wrap items-end justify-between gap-x-6 gap-y-4 border-t border-cyan-500/20 pt-12">
           <Link href={"/"} aria-label="Home">
             <Logo className="h-8" fillOnHover>
               PUROINTERNET
