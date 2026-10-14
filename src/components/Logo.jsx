@@ -3,13 +3,13 @@ import Link from "next/link";
 
 const Logo = ({ invert, href, className, children, ...props }) => {
   className = clsx(
-    "block shrink-0 transition hover:opacity-90",
+    "group block shrink-0 transition",
     className
   );
   const inner = (
     <span
       className={clsx(
-        "font-display text-lg font-semibold tracking-normal sm:text-2xl md:text-3xl",
+        "font-display text-lg font-semibold tracking-normal transition duration-300 group-hover:text-cyan-500 group-hover:[text-shadow:0_0_18px_rgba(6,182,212,0.75)] group-focus-visible:text-cyan-500 group-focus-visible:[text-shadow:0_0_18px_rgba(6,182,212,0.75)] sm:text-2xl md:text-3xl",
         invert ? "text-white" : "text-neutral-950"
       )}
     >
