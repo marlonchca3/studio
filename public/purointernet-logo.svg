@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1254" height="1254" viewBox="0 0 1254 1254" role="img" aria-label="PuroInternet.com logo">
+<defs>
+ <radialGradient id="bg"><stop stop-color="#092449"/><stop offset=".7" stop-color="#041126"/><stop offset="1" stop-color="#010611"/></radialGradient>
+ <linearGradient id="blue" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#06d9ed"/><stop offset=".4" stop-color="#009bfa"/><stop offset="1" stop-color="#0349e8"/></linearGradient>
+ <linearGradient id="front" x1="0" y1="0" x2=".8" y2="1"><stop stop-color="#008eff"/><stop offset="1" stop-color="#0641d9"/></linearGradient>
+ <linearGradient id="ring" x1="0" y1="0" x2="1" y2=".8"><stop stop-color="#12e8f3"/><stop offset=".55" stop-color="#38eaf7"/><stop offset="1" stop-color="#0072fc"/></linearGradient>
+ <linearGradient id="white" x1="0" y1="0" x2=".8" y2="1"><stop stop-color="#fff"/><stop offset="1" stop-color="#c7eaff"/></linearGradient>
+ <filter id="glow" x="-30%" y="-50%" width="160%" height="200%"><feGaussianBlur stdDeviation="11"/></filter>
+</defs>
+<rect width="1254" height="1254" fill="url(#bg)"/>
+<!-- Orbital ring behind monogram -->
+<path d="M410 347 C 280 357 234 390 261 435 C 307 512 626 632 832 671 C 924 690 974 681 987 653 C 1000 619 955 573 885 536 C 944 579 961 614 945 637 C 913 691 617 602 401 504 C 307 461 287 422 321 385 C 338 367 372 355 410 347Z" fill="url(#ring)" opacity=".48" filter="url(#glow)"/>
+<path d="M410 347 C 280 357 234 390 261 435 C 307 512 626 632 832 671 C 924 690 974 681 987 653 C 1000 619 955 573 885 536 C 944 579 961 614 945 637 C 913 691 617 602 401 504 C 307 461 287 422 321 385 C 338 367 372 355 410 347Z" fill="url(#ring)"/>
+<!-- Main P -->
+<path d="M411 202 H733 C838 202 916 276 916 386 C916 507 828 596 708 596 H558 V690 C558 741 520 773 474 773 H411 Z M555 287 V553 C576 519 600 503 655 503 H700 C764 503 807 459 807 394 C807 330 769 287 700 287Z" fill="url(#blue)" fill-rule="evenodd"/>
+<path d="M411 202 C472 211 523 240 555 287 V553 L411 486Z" fill="url(#front)"/>
+<!-- wifi -->
+<g fill="none" stroke="url(#white)" stroke-linecap="round"><path d="M596 374 Q676 307 758 374" stroke-width="30"/><path d="M632 415 Q676 379 721 415" stroke-width="30"/></g>
+<circle cx="677" cy="455" r="19" fill="url(#white)"/>
+<!-- wordmark -->
+<text x="627" y="950" font-family="Arial,Helvetica,sans-serif" font-size="159" font-weight="800" text-anchor="middle" textLength="980" lengthAdjust="spacingAndGlyphs"><tspan fill="#fff">Puro</tspan><tspan fill="url(#blue)">Internet</tspan></text>
+<path d="M315 1007 H487" stroke="url(#ring)" stroke-width="4"/><path d="M763 1007 H934" stroke="url(#ring)" stroke-width="4"/>
+<text x="627" y="1027" font-family="Arial,Helvetica,sans-serif" font-size="74" letter-spacing="10" text-anchor="middle" fill="#fff">.com</text>
+</svg>

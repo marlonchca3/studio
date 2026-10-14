@@ -12,6 +12,7 @@ import clsx from "clsx";
 import Offices from "./Offices";
 import SocialMedia from "./SocialMedia";
 import Footer from "./Footer";
+import WhatsAppBubble from "./WhatsAppBubble";
 
 const Header = ({
   panelId,
@@ -201,6 +202,7 @@ const RootLayoutInner = ({ children }) => {
           <Footer />
         </motion.div>
       </motion.div>
+      <WhatsAppBubble />
     </MotionConfig>
   );
 };

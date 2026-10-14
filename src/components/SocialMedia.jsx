@@ -10,7 +10,7 @@ import {
 export const SocialMediaProfiles = [
   {
     title: "WhatsApp",
-    href: "https://wa.me/",
+    href: "https://wa.me/51916136979",
     icon: BsWhatsapp,
   },
   { title: "GitHub", href: "https://github.com/", icon: BsGithub },

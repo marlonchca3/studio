@@ -1,13 +1,34 @@
 import clsx from "clsx";
+import Image from "next/image";
 import Link from "next/link";
 
 const Logo = ({ invert, href, className, children, ...props }) => {
   className = clsx(
-    className,
-    "black",
-    invert ? "text-white hover:text-blue-600" : "text-black hover:text-blue-600"
+    "flex shrink-0 items-center gap-3 transition hover:opacity-90",
+    className
   );
-  const inner = <span className="relative">{children}</span>;
+  const inner = (
+    <>
+      <Image
+        src="/purointernet-logo.svg"
+        alt=""
+        width={160}
+        height={160}
+        className={clsx(
+          "h-14 w-14 rounded-xl object-contain sm:h-16 sm:w-16",
+          invert && "ring-1 ring-white/10"
+        )}
+      />
+      <span
+        className={clsx(
+          "font-display text-xl font-semibold tracking-normal sm:text-2xl",
+          invert ? "text-white" : "text-neutral-950"
+        )}
+      >
+        {children || "PUROINTERNET"}
+      </span>
+    </>
+  );
   if (href) {
     return (
       <Link href={href} className={className} {...props}>
@@ -16,15 +37,9 @@ const Logo = ({ invert, href, className, children, ...props }) => {
     );
   }
   return (
-    <h2
-      className={clsx(
-        "cursor-pointer text-2xl font-semibold duration-300",
-        className
-      )}
-      {...props}
-    >
+    <div className={className} {...props}>
       {inner}
-    </h2>
+    </div>
   );
 };
 
