@@ -2,8 +2,16 @@ import ContactSection from "@/components/ContactSection";
 import Container from "@/components/Container";
 import Cultures from "@/components/Cultures";
 import PageIntro from "@/components/PageIntro";
+import { createPageMetadata } from "@/lib/seo";
 import { StatList, StatListItem } from "@/components/StatList";
 import React from "react";
+
+export const metadata = createPageMetadata({
+  title: "Sobre PUROINTERNET: desarrollo web y soluciones digitales",
+  description:
+    "Conoce PUROINTERNET, un equipo que desarrolla páginas web, sistemas empresariales y soluciones digitales para negocios en Perú.",
+  path: "/about/",
+});
 
 const AboutPage = () => {
   return (

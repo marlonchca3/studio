@@ -4,7 +4,15 @@ import Deliver from "@/components/Deliver";
 import Discover from "@/components/Discover";
 import PageIntro from "@/components/PageIntro";
 import Values from "@/components/Values";
+import { createPageMetadata } from "@/lib/seo";
 import React from "react";
+
+export const metadata = createPageMetadata({
+  title: "Proceso de diseño y desarrollo web",
+  description:
+    "Conoce el proceso de PUROINTERNET: diagnóstico, arquitectura, desarrollo, pruebas y lanzamiento de soluciones digitales.",
+  path: "/process/",
+});
 
 const ProcessPage = () => {
   return (

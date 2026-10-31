@@ -1,5 +1,13 @@
 import PageIntro from "@/components/PageIntro";
+import { createPageMetadata } from "@/lib/seo";
 import React from "react";
+
+export const metadata = createPageMetadata({
+  title: "Proyectos y soluciones de desarrollo web",
+  description:
+    "Explora los tipos de soluciones digitales que PUROINTERNET puede desarrollar: sistemas de gestión, dashboards, e-commerce y páginas web.",
+  path: "/work/",
+});
 
 const WorkPage = () => {
   return (

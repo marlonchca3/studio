@@ -11,13 +11,13 @@ const Services = () => {
     <section id="servicios">
       <SectionIntro
         eyebrow="Servicios"
-        title="Desarrollamos soluciones digitales completas para operar, vender y escalar."
+        title="Diseño y creación de páginas web en Perú para negocios que quieren crecer."
         className="mt-24 sm:mt-32 lg:mt-40"
       >
         <p>
-          Desde una landing page rapida hasta un sistema web con usuarios,
-          bases de datos, paneles e integraciones, construimos tecnologia con
-          foco en resultados.
+          Creamos desde landing pages hasta sitios corporativos y sistemas web
+          con usuarios, bases de datos, paneles e integraciones, con foco en los
+          objetivos de cada negocio.
         </p>
       </SectionIntro>
       <Container className="mt-16">

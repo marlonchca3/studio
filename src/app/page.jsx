@@ -329,7 +329,7 @@ function AboutPreview() {
 
 export default function Home() {
   return (
-    <main className="text-black">
+    <div className="text-black">
       <Container className="mt-24 sm:mt-32 lg:mt-40">
         <div className="lg:flex lg:items-center lg:justify-between lg:gap-x-16">
           <FadeIn className="max-w-4xl lg:max-w-3xl">
@@ -337,11 +337,12 @@ export default function Home() {
               Desarrollo web, sistemas y automatizacion
             </p>
             <h1 className="font-display text-5xl font-medium tracking-tight text-neutral-950 [text-wrap:balance] sm:text-7xl">
-              Creamos productos digitales que hacen crecer tu negocio
+              Diseño de páginas web en Lima y todo el Perú
             </h1>
             <p className="mt-6 max-w-2xl text-xl text-neutral-600">
-              Disenamos paginas web, sistemas y soluciones digitales rapidas,
-              modernas y preparadas para escalar.
+              Creamos páginas web para negocios de Lima y todo el Perú. Si
+              buscas páginas web económicas, conversemos sobre una opción
+              adecuada para tu proyecto.
             </p>
             <div className="mt-10 flex flex-wrap gap-4">
               <Link
@@ -372,6 +373,6 @@ export default function Home() {
         profesional y tener datos claros para tomar mejores decisiones.
       </Testimonials>
       <ContactSection />
-    </main>
+    </div>
   );
 }

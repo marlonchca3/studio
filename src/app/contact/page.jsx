@@ -2,6 +2,14 @@ import ContactDetails from "@/components/ContactDetails";
 import ContactForm from "@/components/ContactForm";
 import Container from "@/components/Container";
 import PageIntro from "@/components/PageIntro";
+import { createPageMetadata } from "@/lib/seo";
+
+export const metadata = createPageMetadata({
+  title: "Contacto y cotizaciones de desarrollo web",
+  description:
+    "Contacta a PUROINTERNET para conversar sobre tu página web, sistema empresarial o proyecto digital. Atención remota desde Perú.",
+  path: "/contact/",
+});
 
 const ContactPage = () => {
   return (
