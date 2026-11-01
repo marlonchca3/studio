@@ -1,4 +1,5 @@
 import PageIntro from "@/components/PageIntro";
+import { ProjectGallery } from "@/components/Projects";
 import { createPageMetadata } from "@/lib/seo";
 import React from "react";
 
@@ -14,14 +15,14 @@ const WorkPage = () => {
     <>
       <PageIntro
         eyebrow="Proyectos"
-        title="Soluciones digitales pensadas para problemas reales de negocio."
+        title="Diseños web para turismo, moda y formación profesional."
       >
         <p>
-          Estos casos iniciales pueden editarse para mostrar resultados reales:
-          sistemas de gestion, dashboards, plataformas educativas, e-commerce y
-          landing pages corporativas.
+          Explora estos conceptos visuales de portafolio y descubre distintas
+          formas de presentar una marca y sus servicios en internet.
         </p>
       </PageIntro>
+      <ProjectGallery className="mt-12 sm:mt-16" />
     </>
   );
 };

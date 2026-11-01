@@ -4,41 +4,9 @@ import Container from "@/components/Container";
 import FadeIn, { FadeInStagger } from "@/components/FadeIn";
 import GridPattern from "@/components/GridPattern";
 import SectionIntro from "@/components/SectionIntro";
+import Projects from "@/components/Projects";
 import Services from "@/components/Services";
 import Testimonials from "@/components/Testimonials";
-
-const projects = [
-  {
-    title: "Sistema de gestion empresarial",
-    type: "ERP a medida",
-    description:
-      "Control de clientes, operaciones, usuarios, reportes y procesos internos en una plataforma centralizada.",
-  },
-  {
-    title: "Dashboard aeronautico",
-    type: "Panel operativo",
-    description:
-      "Visualizacion de indicadores, alertas y datos criticos para equipos que necesitan decisiones rapidas.",
-  },
-  {
-    title: "Plataforma educativa",
-    type: "Producto digital",
-    description:
-      "Aulas, usuarios, contenidos, pagos y seguimiento de progreso con una experiencia clara para estudiantes.",
-  },
-  {
-    title: "Tienda online",
-    type: "E-commerce",
-    description:
-      "Catalogo, carrito, pagos, administracion de productos y automatizaciones para vender mejor en internet.",
-  },
-  {
-    title: "Landing page corporativa",
-    type: "Conversion",
-    description:
-      "Pagina rapida, persuasiva y optimizada para captar prospectos desde campanas, redes y buscadores.",
-  },
-];
 
 const process = [
   ["Diagnostico", "Entendemos tu negocio, objetivos, usuarios y procesos."],
@@ -69,14 +37,6 @@ const benefits = [
   "Integraciones con herramientas reales",
   "Automatizacion de tareas repetitivas",
   "Soporte claro despues del lanzamiento",
-];
-
-const projectAccents = [
-  "from-cyan-500 to-sky-500 border-cyan-200 shadow-cyan-500/10 text-cyan-700",
-  "from-emerald-500 to-lime-400 border-emerald-200 shadow-emerald-500/10 text-emerald-700",
-  "from-fuchsia-500 to-rose-500 border-fuchsia-200 shadow-fuchsia-500/10 text-fuchsia-700",
-  "from-amber-400 to-orange-500 border-amber-200 shadow-amber-500/10 text-amber-700",
-  "from-violet-500 to-indigo-500 border-violet-200 shadow-violet-500/10 text-violet-700",
 ];
 
 const processAccents = [
@@ -139,56 +99,6 @@ function HeroPreview() {
         </div>
       </div>
     </div>
-  );
-}
-
-function Projects() {
-  return (
-    <section id="proyectos" className="mt-24 sm:mt-32 lg:mt-40">
-      <SectionIntro
-        eyebrow="Proyectos"
-        title="Casos de exito editables para mostrar lo que PUROINTERNET puede construir."
-      >
-        <p>
-          Estos ejemplos iniciales sirven como base para presentar resultados,
-          industrias y soluciones reales a medida que el portafolio crezca.
-        </p>
-      </SectionIntro>
-      <Container className="mt-16">
-        <FadeInStagger>
-          <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
-            {projects.map((project, index) => (
-              <FadeIn key={project.title}>
-                <article
-                  className={`flex min-h-[18rem] flex-col justify-between overflow-hidden rounded-lg border bg-white p-6 shadow-lg transition hover:-translate-y-1 hover:shadow-xl ${projectAccents[index]}`}
-                >
-                  <div>
-                    <div
-                      className={`mb-6 h-1.5 w-16 rounded-full bg-gradient-to-r ${projectAccents[index]}`}
-                    />
-                    <p className="text-sm font-semibold">
-                      {project.type}
-                    </p>
-                    <h3 className="mt-4 font-display text-2xl font-medium text-neutral-950">
-                      {project.title}
-                    </h3>
-                    <p className="mt-4 text-base text-neutral-600">
-                      {project.description}
-                    </p>
-                  </div>
-                  <Link
-                    href="/work"
-                    className="mt-8 text-sm font-semibold text-neutral-950 transition hover:text-cyan-700"
-                  >
-                    Ver detalle <span aria-hidden="true">-&gt;</span>
-                  </Link>
-                </article>
-              </FadeIn>
-            ))}
-          </div>
-        </FadeInStagger>
-      </Container>
-    </section>
   );
 }
 
