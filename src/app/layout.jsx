@@ -1,5 +1,14 @@
 import RootLayout from "@/components/RootLayout";
+import localFont from "next/font/local";
 import "./globals.css";
+
+const monaSans = localFont({
+  src: "../fonts/Mona-Sans.var.woff2",
+  display: "swap",
+  weight: "200 900",
+  variable: "--font-mona-sans",
+  declarations: [{ prop: "font-stretch", value: "75% 125%" }],
+});
 
 const structuredData = {
   "@context": "https://schema.org",
@@ -59,7 +68,7 @@ export default function Layout({ children }) {
   return (
     <html
       lang="es"
-      className="h-full bg-neutral-950 text-base antialiased text-neutral-100"
+      className={`${monaSans.variable} h-full bg-neutral-950 text-base antialiased text-neutral-100`}
     >
       <body className="flex min-h-full flex-col">
         <script

@@ -12,9 +12,9 @@ module.exports = {
         "4xl": "2.5rem",
       },
       fontFamily: {
-        sans: ["Mona Sans", ...defaultTheme.fontFamily.sans],
+        sans: ["var(--font-mona-sans)", ...defaultTheme.fontFamily.sans],
         display: [
-          ["Mona Sans", ...defaultTheme.fontFamily.sans],
+          ["var(--font-mona-sans)", ...defaultTheme.fontFamily.sans],
           { fontVariationSettings: '"wdth" 125' },
         ],
       },

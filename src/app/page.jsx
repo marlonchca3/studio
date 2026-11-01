@@ -88,7 +88,7 @@ const processAccents = [
 
 function HeroPreview() {
   return (
-    <FadeIn className="mt-16 lg:mt-0 lg:w-[34rem] lg:flex-none">
+    <div className="mt-16 lg:mt-0 lg:w-[34rem] lg:flex-none">
       <div className="relative overflow-hidden rounded-lg bg-gradient-to-br from-neutral-950 via-cyan-950 to-fuchsia-950 p-6 shadow-2xl shadow-cyan-950/30">
         <GridPattern
           className="absolute inset-0 h-full w-full fill-cyan-300/10 stroke-white/10"
@@ -138,7 +138,7 @@ function HeroPreview() {
           </div>
         </div>
       </div>
-    </FadeIn>
+    </div>
   );
 }
 
@@ -332,7 +332,7 @@ export default function Home() {
     <div className="text-black">
       <Container className="mt-24 sm:mt-32 lg:mt-40">
         <div className="lg:flex lg:items-center lg:justify-between lg:gap-x-16">
-          <FadeIn className="max-w-4xl lg:max-w-3xl">
+          <div className="max-w-4xl lg:max-w-3xl">
             <p className="mb-6 inline-flex rounded-full bg-gradient-to-r from-cyan-100 via-sky-100 to-fuchsia-100 px-4 py-2 font-display text-base font-semibold text-cyan-800 ring-1 ring-cyan-200">
               Desarrollo web, sistemas y automatizacion
             </p>
@@ -358,7 +358,7 @@ export default function Home() {
                 Ver proyectos
               </Link>
             </div>
-          </FadeIn>
+          </div>
           <HeroPreview />
         </div>
       </Container>
